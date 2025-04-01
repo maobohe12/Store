@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../音乐播放器/index.css">
+    <script src="../音乐播放器/music.js"></script>
+    <script src="../音乐播放器/index.js"></script>
+
+</head>
+
+<body>
+    <!-- 音乐播放器 -->
+    <div class="player">
+        <!-- 歌曲信息显示 -->
+        <div class="palyer-info">
+            <div class="info">
+                <!-- <h4 class="name">aaa</h4>
+                <div class="singer">bbb</div>
+                <div class="progress">
+                    <div class="music-top">
+                        <span class="now">00:05</span>
+                        <span class="residue">05:10</span>
+                    </div>
+                    <div class="music-bottom">
+                        <span class="line"></span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- 播发器控制 -->
+        <div class="player-control">
+            <!-- 左侧卡片 -->
+            <div class="card" style="animation-play-state: paused;">
+                <img src="http://p1.music.126.net/86FvmISFA6BnONkSk06uhA==/109951167110962297.jpg?param=80x80" alt="标题"
+                    id="card_img">
+            </div>
+            <!-- 右侧控制器 -->
+            <div class="control">
+                <i class="fa fa-fast-backward" id="prev"></i>
+                <i class="fa fa-play" id="button"></i>
+                <i class="fa fa-fast-forward" id="next"></i>
+                <i class="fa fa-list" id="liebiao"></i>
+            </div>
+        </div>
+    </div>
+    <!-- 背景 -->
+    <div class="mask"></div>
+    <!-- 音乐列表 -->
+    <div class="list" style="width: 0px;">
+        <div class="list-top">
+            <span class="music-name">音乐列表</span>
+            <i class="fa fa-angle-right"></i>
+        </div>
+        <div class="list-bottom">
+            <!-- <p>01.aaa-bbb</p> -->
+        </div>
+    </div>
+    <audio src=""></audio>
+</body>
+
+
+<script>
+</script>
+
+</html>
