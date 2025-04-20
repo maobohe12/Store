@@ -1,15 +1,11 @@
 <template>
-  <div class="app">
-    <Top></Top>
-    <Center></Center>
-    <Bottom></Bottom>
-  </div>
+  <Main></Main>
+  <Rain></Rain>
 </template>
 
 <script setup lang="ts">
-import Top from "./components/top.vue";
-import Center from "./components/center.vue";
-import Bottom from "./components/bottom.vue";
+import Rain from "./components/rian.vue";
+import Main from "./components/mian.vue"
 </script>
 
 <style lang="scss">
@@ -19,14 +15,8 @@ import Bottom from "./components/bottom.vue";
   box-sizing: border-box;
 }
 
-.app {
-  flex-direction: column;
-  margin: 20px auto;
-  width: 400px;
-  min-height: 600px;
-  background-color: rgb(245, 246, 252);
-  border-radius: 20px;
-  padding-top: 15px;
-  box-shadow: 0px 5px 15px #888888;
+body {
+  width: 100vw;
+  height: 100vh;
 }
 </style>

@@ -62,13 +62,13 @@
                 <el-button class="button">清空全部计划</el-button>
             </template>
         </el-popconfirm>
-        <el-dialog v-model="openEdit" title="更改计划" width="500" center>
+        <!--  dialog中append-to-body把定位基准改到body上-->
+        <el-dialog v-model="openEdit" title="更改计划" width="500" center append-to-body>
             <el-form>
                 <el-form-item>
                     <el-input v-model="listStore.list[num].value" type="textarea" />
                 </el-form-item>
             </el-form>
-            <!-- 插槽控制-表单底部 -->
             <template #footer>
                 <div class="dialog-footer">
                     <el-button @click="openEdit = false">取消</el-button>
